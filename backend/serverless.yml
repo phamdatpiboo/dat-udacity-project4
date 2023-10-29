@@ -1,7 +1,8 @@
 # TODO: Change the name of the org 
-org: sudkul
-app: serverless-todo-app
-service: serverless-todo-app
+org: bolobala
+app: serverless-todo-app-2
+service: serverless-todo-app-2
+frameworkVersion: '3.36.0'
 
 plugins:
   - serverless-webpack
@@ -10,8 +11,8 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs12.x
-  lambdaHashingVersion: '20201221'
+  runtime: nodejs16.x
+  # lambdaHashingVersion: '20201221'
 
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
